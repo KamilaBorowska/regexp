@@ -5,7 +5,7 @@ angular.module 'regexpApp', []
 .controller 'RegexpController', ->
   @getValidity = ->
     try
-      regexp = new Regexp @regexp, 'i'
+      regexp = new RegExp @regexp, 'i'
     catch
       return "Syntax error"
 
