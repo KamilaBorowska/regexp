@@ -3,7 +3,7 @@
 
 angular.module 'regexpApp', []
 .controller 'RegexpController', ->
-  @getValidity ->
+  @getValidity = ->
     try
       regexp = new Regexp @regexp, 'i'
     catch
